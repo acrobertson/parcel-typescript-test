@@ -1,9 +1,12 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-console.log('Hello from tsx!')
+function out(msg: string): void {
+    console.log(msg);
+}
 
-ReactDOM.render(
-  <p>Hello</p>,
-  document.getElementById('app'),
-)
+out('hello');
+out(1);
+const a: string = out('a');
+
+ReactDOM.render(<p>Hello</p>, document.getElementById('app'));
